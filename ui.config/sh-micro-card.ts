@@ -25,10 +25,10 @@ export default {
   },
   teaser: {
     wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl p-4 mx-auto max-w-md w-full h-full justify-items-center hover:shadow-lg duration-300 border-2 bg-golden/[0.4] border-golden/[0.6] hover:border-golden dark:bg-neutral-700 dark:border-neutral-600 dark:hover:border-golden",
-    coverImage: "absolute inset-0 w-full h-full object-cover opacity-60 z-0",
-    coverText: "absolute inset-0 flex items-center justify-center text-center ease-in-out opacity-100 z-10",
+    coverImage: "absolute inset-0 w-full h-full object-cover opacity-60 dark:opacity-60 group-hover:opacity-[10%] transition-opacity duration-500 z-0",
+    coverText: "absolute inset-0 flex items-center justify-center text-center ease-in-out opacity-100 group-hover:opacity-[10%] transition-opacity duration-500 z-0",
     coverIconWrapper: "absolute inset-0 w-full h-full flex items-center justify-center z-0",
-    coverIcon: "absolute inset-0 w-full h-full object-cover opacity-30 duration-500 z-0",
+    coverIcon: "absolute inset-0 w-full h-full object-cover opacity-30 dark:opacity-30 duration-500 group-hover:opacity-[5%] transition-opacity duration-500 z-0",
     image: "relative mt-4 w-full h-auto flex shrink mx-auto z-20",
     icon: "relative sm:mt-4 mb-8 flex shrink-0 mx-auto text-[96px] dark:saturate-[300%] transition-transform duration-500 ease-in-out group-hover:translate-y-[-0.3rem] transform z-20",
     title: "title mt-16 text-center text-[24px] font-extrabold dark:saturate-[300%] break-words z-20 transition-transform duration-500 ease-in-out group-hover:translate-y-[-2rem] transform",
