@@ -179,13 +179,15 @@ h7 {
 }
 
 .dark b {
-  color: theme('colors.golden');
-  filter: saturate(2.8) brightness(0.75);
+  color: theme('colors.golden'); /* Lighter golden shade for better contrast */
+  font-weight: 600; /* Slightly reduce boldness */
+  filter: saturate(2.5) brightness(0.85);
 }
 
 .dark strong {
-  color: theme('colors.golden');
-  filter: saturate(3) brightness(0.75);
+  color: theme('colors.golden'); /* Slightly brighter shade */
+  font-weight: 600; /* Adjust boldness */
+  filter: saturate(2.8) brightness(0.85);
 }
 
 .dark h1,
