@@ -71,7 +71,7 @@ const config = {
     rootMenuLabel: 'font-medium text-xl text-gray-900 dark:text-gray-100',
     rootActive:
         'relative after:content-[" "] after:absolute after:left-0 after:bottom-0 after:w-full after:h-[3px] after:bg-oma-yellow-500 after:rounded-full',
-    submenuActive: 'underline underline-offset-4 decoration-2 decoration-blue-600',
+    submenuActive: 'underline underline-offset-4 decoration-2 decoration-oma-yellow-500',
     button:
         'w-full flex items-center px-4 py-2 text-left hover:bg-gray-200 dark:hover:bg-gray-600 transition duration-200',
     label: 'font-small text-gray-900 dark:text-gray-100 truncate',
