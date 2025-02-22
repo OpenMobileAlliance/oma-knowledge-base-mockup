@@ -26,7 +26,7 @@
 <script setup lang="ts">
 
 const config = {
-  linkCrumb: 'text-[15px] text-primary/[0.7] hover:text-black dark:text-primary/[0.8] dark:hover:text-white',
+  linkCrumb: 'text-[15px] text-primary/[0.7] hover:text-black dark:text-primary/[0.8] dark:hover:text-white duration-300 ease-out',
   activeCrumb: 'text-[15px] text-black dark:text-white',
 };
 
