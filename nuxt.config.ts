@@ -8,7 +8,7 @@ export default defineNuxtConfig({
   },
 
   site: {
-    url: 'https://www.openmobilealliance.org/', 
+    url: 'https://oma-knowledge-base-mockup.openmobilealliance.org/', 
     name: 'Website of OMA SpecWork as an innovative kind of Standards Development Organization' 
   },
 
