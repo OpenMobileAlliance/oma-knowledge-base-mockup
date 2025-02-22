@@ -2,8 +2,9 @@
   <div :class="[ui.wrapper, Status]">
     <div v-if="urlImage" class="lg:grid lg:grid-cols-4 lg:grid-rows-1 lg:grid-flow-col lg:gap-10">
       <img :src="urlImage" :alt="altImage" :class="[imgPositionClass, imgSpanClass, ui.image]" />
-      <div :class="[positionTextClass, spanTextClass, alignTextClass, 'content-start']">
+      <div :class="[positionTextClass, spanTextClass, alignTextClass, 'content-center']">
         <MDC v-if="title" :class="ui.title" :value="title" />
+        <hr v-if="title" :class="ui.underline" />
         <MDC v-if="subtitle" :class="ui.subtitle" :value="subtitle" />
         <MDC v-if="text" :class="ui.text" :value="text" />
       </div>
