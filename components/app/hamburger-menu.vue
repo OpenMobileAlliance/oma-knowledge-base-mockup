@@ -8,7 +8,11 @@
                 <template #header>
                     <div class="flex h-8 justify-between items-center">
                         <AppSocialLinks class="text-2xl space-x-1" />
-                        <ColorMode class="" />
+                        <div class="flex items-center">
+                            <ColorMode class="" />
+                            <UIcon name="material-symbols-light:right-panel-close" dynamic @click="isOpen = false"
+                                class="text-4xl mb-2 text-slate-600 dark:text-golden hover:text-oma-red-500 dark:hover:text-oma-red-500 cursor-pointer" />
+                        </div>
                     </div>
                 </template>
 
