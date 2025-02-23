@@ -4,7 +4,8 @@ export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts", "nuxt-testimonial", '@nuxtjs/color-mode', '@zadigetvoltaire/nuxt-gtm', "@nuxtjs/sitemap"],
 
   routeRules: {
-    '/': { redirect: '/home' }
+    '/': { redirect: '/home' },
+    '/groups/resources': { redirect: '/specifications/resources' },
   },
 
   site: {
@@ -65,7 +66,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/news', '/news/articles', '/guidelines', '/groups', '/media', '/oma-events'],
+      routes: ['/news', '/news/articles', '/guidelines', '/groups', '/media', '/oma-events', '/about/faq/'],
       ignore: ['/www.ericsson.com'], 
       failOnError: false,
     },
