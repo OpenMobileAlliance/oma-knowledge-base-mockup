@@ -1,16 +1,16 @@
 <template>
-    <div>
-      <div class="md:flex">
-        <div class="p-7">
-          <img src="/images/oma2.png" class="w-full h-full md:h-44" />
-        </div>
-        <div class="p-7">
-          <img v-if="!computedLogoSrc" src="/logo-light.png" class="w-full h-full md:h-32 mt-20" />
-          <img v-if="computedLogoSrc" src="/logo-dark.png" class="w-full h-full md:h-32 mt-20" />
-        </div>
+  <div>
+    <div class="flex-col justify-center">
+      <div class="">
+        <img src="/images/oma2.png" class="m-0 max-w-full max-h-full object-contain" />
+      </div>
+      <div class="flex">
+        <img v-if="!computedLogoSrc" src="/logo-light.png" class="m-0 max-w-full max-h-full object-contain" />
+        <img v-if="computedLogoSrc" src="/logo-dark.png" class="m-0 max-w-full max-h-full object-contain" />
       </div>
     </div>
-  </template>
+  </div>
+</template>
 
 <script setup lang="ts">
 
