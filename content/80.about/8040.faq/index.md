@@ -23,7 +23,6 @@ This section is updated based on the questions received by the Working Groups.
 
 ::ShFaq
 ---
-title: ""
 ui:
   header:
     wrapper: "font-bold text-xl mb-4"
@@ -81,7 +80,6 @@ Frequent asked questions about OMA LightweithM2M (LwM2M).
 
 ::ShFaq
 ---
-title: ""
 ui:
   header:
     wrapper: "font-bold text-xl mb-4"
@@ -113,7 +111,6 @@ This section aims to provide an overview of what is an OMA Test Events, and what
 
 ::ShFaq
 ---
-title: " "
 ui:
   header:
     wrapper: "font-bold text-xl mb-4"
@@ -155,7 +152,6 @@ Whether you're a utility professional seeking solutions or simply interested in 
 
 ::ShFaq
 ---
-title: ""
 ui:
   header:
     wrapper: "font-bold text-xl mb-4"
