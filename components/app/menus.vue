@@ -138,7 +138,7 @@ const excludedTitles = [
     'OMA Test Lab',
     'Open Mobile Alliance'
 ]
-const excludedPaths = ['/media/articles']
+const excludedPaths = ['/media/articles', '/oma-events/past-events']
 
 const filterExcludedPaths = (navItem: any): boolean => {
     if (excludedPaths.includes(navItem._path)) {
