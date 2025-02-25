@@ -15,7 +15,7 @@
         <div :class="ui.center">
           <div class="flex justify-between items-center lg:items-start mb-2">
             <div :class="ui.right">
-              <ColorMode class="hidden 2xl:flex" />
+              <!-- <ColorMode class="hidden 2xl:flex" /> -->
 
               <span class="mr-2 text-base mt-1">
                 <UDropdown :items="items" mode="click" :popper="{ placement: 'bottom-start' }"

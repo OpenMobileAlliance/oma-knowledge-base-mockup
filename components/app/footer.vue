@@ -1,9 +1,7 @@
 <template>
-  <div class="relative border-t-2 dark:border-golden/[0.5] p-6 dark:bg-neutral-950/[0.3] overflow-hidden mb-12">
+  <div class="relative border-t-2 dark:border-golden/[0.5] p-6 dark:bg-neutral-950/[0.3] overflow-hidden mb-10">
     <img src="/logo.png" alt="oma logo"
       class="absolute bottom-0 md:-top-[220%] md:-left-64 size-[200%] md:size-[330%] opacity-20 object-cover md:object-contain z-20" />
-
-    <!-- Added a wrapper with z-index to keep text on top -->
     <div class="relative z-30">
       <ContentQuery path="/footer-content" v-slot="{ data }">
         <ContentRenderer :value="item" v-for="item in data" :class="ui.footerContent" />
@@ -18,8 +16,8 @@
           Copyright &copy; &nbsp; <div>{{ year }}</div>.
         </span>
         <ClientOnly>
-          <UButton :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'" color="gray"
-            variant="ghost" aria-label="Theme" @click="isDark = !isDark" />
+          <!-- <UButton :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'" color="gray"
+            variant="ghost" aria-label="Theme" @click="isDark = !isDark" /> -->
           <template #fallback>
             <div class="w-8 h-8" />
           </template>
