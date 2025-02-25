@@ -12,6 +12,7 @@
     <div v-else class="grid grid-cols-1 grid-rows-1">
       <div :class="[alignTextClass]">
         <MDC v-if="title" :class="ui.title" :value="title" />
+        <hr v-if="title" :class="ui.underline" />
         <MDC v-if="subtitle" :class="ui.subtitle" :value="subtitle" />
         <MDC v-if="text" :class="[ui.text, 'items-center']" :value="text" />
       </div>
