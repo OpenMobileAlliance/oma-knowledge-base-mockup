@@ -6,7 +6,7 @@ export default defineNuxtConfig({
   routeRules: {
     '/': { redirect: '/home' },
     '/groups/resources': { redirect: '/specifications/resources' },
-    '/join/join-newsletter': { redirect: '/media/newsletter' },
+    '/join/join-newsletter': { redirect: '/about/newsletter' },
   },
 
   site: {
