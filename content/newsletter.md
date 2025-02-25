@@ -1,7 +1,7 @@
 ---
 title: Newsletter
 description:
-layout: doc
+layout: web
 ---
 
 ## Subscribe to the OMA Newsletter
