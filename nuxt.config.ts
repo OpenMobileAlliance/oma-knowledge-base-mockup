@@ -15,7 +15,7 @@ export default defineNuxtConfig({
   },
 
   colorMode: {
-    preference: 'system'
+    preference: 'dark'
   },
   content: {
     highlight: {
