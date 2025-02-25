@@ -1,15 +1,12 @@
-# Hello Footer Component
-
-Let's try some table
 
 ::ShMultiColumn
 ---
 ui:
-    wrapper: text-xl
+    wrapper: text-[15px]
 cols: 4
 ---
     :::ShColumn
-    ## Legal & Compliance
+    ### Legal & Compliance
 
     [Privacy Policy](/about/policies)
 
@@ -27,7 +24,7 @@ cols: 4
     :::
 
     :::ShColumn
-    ## Membership & Participation
+    ### Membership & Participation
 
     Membership Agreement
 
@@ -43,7 +40,7 @@ cols: 4
     :::
 
     :::ShColumn
-    ## Help & Support
+    ### Help & Support
 
     Contact Us
 
@@ -57,7 +54,7 @@ cols: 4
     :::
 
     :::ShColumn
-    ## Community & News
+    ### Community & News
 
     Blog
 
