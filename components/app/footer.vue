@@ -1,5 +1,17 @@
 <template>
-  <footer :class="[ui.wrapper, 'fixed']" v-bind="attrs">
+  <div class="relative border-t-2 dark:border-golden/[0.5] p-6 dark:bg-neutral-950/[0.3] overflow-hidden mb-12">
+    <img src="/logo.png" alt="oma logo"
+      class="absolute bottom-0 md:-top-[220%] md:-left-64 size-[200%] md:size-[330%] opacity-20 object-cover md:object-contain z-20" />
+
+    <!-- Added a wrapper with z-index to keep text on top -->
+    <div class="relative z-30">
+      <ContentQuery path="/footer-content" v-slot="{ data }">
+        <ContentRenderer :value="item" v-for="item in data" :class="ui.footerContent" />
+      </ContentQuery>
+    </div>
+  </div>
+
+  <footer :class="[ui.wrapper]" v-bind="attrs">
     <UContainer :class="ui.container">
       <div class="flex justify-between sm:items-center sm:justify-around">
         <span class="text-sm text-gray-500 sm:text-center dark:text-gray-400 flex items-center">
@@ -7,7 +19,7 @@
         </span>
         <ClientOnly>
           <UButton :icon="isDark ? 'i-heroicons-moon-20-solid' : 'i-heroicons-sun-20-solid'" color="gray"
-            variant="ghost" aria-label="Theme" @click="isDark = !isDark" class="" />
+            variant="ghost" aria-label="Theme" @click="isDark = !isDark" />
           <template #fallback>
             <div class="w-8 h-8" />
           </template>
@@ -25,9 +37,9 @@ const date = new Date();
 const year = date.getFullYear();
 
 const config = {
-  wrapper:
-    "py-1 sm:py-2 bottom-0 z-50 w-full bg-background/75 backdrop-blur border-t border-primary/[0.4] dark:border-primary/[0.4]", // removed fixed class
+  wrapper: "fixed py-1 sm:py-2 bottom-0 z-50 w-full bg-background/75 backdrop-blur border-t border-primary/[0.4] dark:border-primary/[0.4]",
   container: "",
+  footerContent: "text-center z-40",
 };
 
 const props = withDefaults(
