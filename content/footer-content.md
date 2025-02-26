@@ -8,15 +8,15 @@ cols: 4
     :::ShColumn
     ## **Legal & Compliance**
 
-    Privacy Policy
+    [Privacy Policy](/about/legal#privacy-policy)
 
-    Cookie Policy
+    [Cookie Policy](/about/legal#cookie-policy)
 
-    Terms of Use
+    [Terms of Use](/about/legal/#terms-of-use)
 
-    GDPR Compliance Notice
+    [GDPR Compliance Notice](/about/legal#gdpr-compliance-notice)
 
-    Data Subject Rights
+    [Data Subject Rights](/about/legal#data-subject-rights)
     
     :::
 
@@ -43,9 +43,9 @@ cols: 4
 
     [FAQs](/about/faq)
 
-    [Support & Inquiries](mailto:memberhip@omaorg.org)
+    [Support & Inquiries](mailto:membership@omaorg.org)
 
-    Security Disclosures
+    [Security Disclosures](/about/legal#security-disclosures)
 
     [Report an Issue](mailto:helpdesk@omaorg.org)
     :::
