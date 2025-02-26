@@ -2,11 +2,11 @@
 ::ShMultiColumn
 ---
 ui:
-    wrapper: text-[15px]
+    wrapper: text-[14px]
 cols: 4
 ---
     :::ShColumn
-    ### Legal & Compliance
+    ### **Legal & Compliance**
 
     [Privacy Policy](/about/policies)
 
