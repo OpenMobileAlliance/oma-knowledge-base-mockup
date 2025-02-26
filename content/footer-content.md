@@ -6,9 +6,9 @@ ui:
 cols: 4
 ---
     :::ShColumn
-    ### **Legal & Compliance**
+    ## **Legal & Compliance**
 
-    [Privacy Policy](/about/policies)
+    Privacy Policy
 
     Cookie Policy
 
@@ -18,13 +18,10 @@ cols: 4
 
     Data Subject Rights
     
-    Intellectual Property (IP) Policy
-
-    Reporting Violations
     :::
 
     :::ShColumn
-    ### Membership & Participation
+    ## **Membership & Participation**
 
     <a href="https://www.openmobilealliance.org/documents/Website/Membership/OMA-Reference-2024-0001-General_Application.pdf" target="_blank">Membership Agreement</a>
 
@@ -40,30 +37,30 @@ cols: 4
     :::
 
     :::ShColumn
-    ### Help & Support
+    ## **Help & Support**
 
-    Contact Us
+    [Contact Us](/about/contact)
 
-    FAQs
+    [FAQs](/about/faq)
 
-    Support & Inquiries
+    [Support & Inquiries](mailto:memberhip@omaorg.org)
 
     Security Disclosures
 
-    Report an Issue
+    [Report an Issue](mailto:helpdesk@omaorg.org)
     :::
 
     :::ShColumn
-    ### Community & News
+    ## **Community & News**
 
-    Blog
+    [Blog](/media/blog)
 
-    Press Releases
+    [Media](/media)
 
-    Newsletter Signup
+    [Newsletter Signup](/about/newsletter)
 
-    Events
+    [Events](/oma-events)
 
-    Working Groups
+    [Working Groups](/groups/wg)
     :::
 ::
