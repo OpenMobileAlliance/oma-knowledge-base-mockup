@@ -26,17 +26,17 @@ cols: 4
     :::ShColumn
     ### Membership & Participation
 
-    Membership Agreement
+    <a href="https://www.openmobilealliance.org/documents/Website/Membership/OMA-Reference-2024-0001-General_Application.pdf" target="_blank">Membership Agreement</a>
 
-    IPR Policy
+    <a href="https://www.openmobilealliance.org/documents/Website/Membership/Member_IPRGuidelines.pdf" target="_blank">IPR Policy</a>
 
-    Liaisons & Partnerships
+    [Liaisons & Partnerships](/about/liaisons)
 
     Code of Conduct
 
-    Working Groups
+    [Working Groups](/groups/wg)
 
-    OMA Bylaws
+    <a href="https://www.openmobilealliance.org/documents/Website/Membership/OMA-Reference-2020-0001-Bylaws.pdf" target="_blank">OMA Bylaws</a>
     :::
 
     :::ShColumn
