@@ -36,7 +36,7 @@
       <template v-else-if="page?.layout === 'articles'">
         <div class="w-full -mt-16 xl:px-44 2xl:px-64">
           <div class="container flex mx-auto">
-            <img :src="page.urlImage" alt="Image" v-if="page.urlImage" class="mx-auto object-contain h-fit w-screen" />
+            <img :src="page.urlImage" alt="Image" v-if="page.urlImage" class="mx-auto object-contain h-fit w-screen rounded-xl" />
           </div>
           <div class="text-center">
             <h2 class="text-oma-300 text-start text-4xl text-primary">{{ page.title }}</h2>

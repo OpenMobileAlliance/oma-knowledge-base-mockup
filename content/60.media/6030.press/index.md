@@ -8,7 +8,6 @@ layout: web
 ::ShListCards
 ---
 ui:
-    wrapper: shadow-xl pb-10 rounded-2xl
     gap: gap-6
 description: This constructor is standalone
 title: |
