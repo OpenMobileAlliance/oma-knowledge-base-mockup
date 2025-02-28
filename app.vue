@@ -13,6 +13,7 @@
       <NuxtPage />
     </div>
     <AppFooter v-if="route.path !== '/' && route" />
+    <UNotifications />
   </div>
 </template>
 
