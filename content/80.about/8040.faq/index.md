@@ -9,7 +9,7 @@ Welcome to our Frequently Asked Questions (FAQs) on Open Mobile Alliance (OMA), 
 ::ShTextImg
 ---
 ui:
-    wrapper: mb-10 shadow-2xl
+    wrapper: mb-10
     title: sm:text-2xl md:text-3xl lg:text-4xl text-base
     subtitle: font-extralight text-base
     text: mt-6
