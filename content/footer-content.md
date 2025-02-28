@@ -5,11 +5,12 @@ navigation: false
 ::ShMultiColumn
 ---
 ui:
-    wrapper: text-[14px]
+    wrapper: text-[14px] justify-items-center
 cols: 4
+gap: md:gap-32
 ---
     :::ShColumn
-    ## **Legal & Compliance**
+    ### **LEGAL & COMPLIANCE**
 
     [Privacy Policy](/about/legal#privacy-policy)
 
@@ -24,7 +25,7 @@ cols: 4
     :::
 
     :::ShColumn
-    ## **Membership & Participation**
+    ### **MEMBERSHIP & PARTICIPATION**
 
     <a href="https://www.openmobilealliance.org/documents/Website/Membership/OMA-Reference-2024-0001-General_Application.pdf" target="_blank">Membership Agreement</a>
 
@@ -40,7 +41,7 @@ cols: 4
     :::
 
     :::ShColumn
-    ## **Help & Support**
+    ### **HELP & SUPPORT**
 
     [Contact Us](/about/contact)
 
@@ -54,7 +55,7 @@ cols: 4
     :::
 
     :::ShColumn
-    ## **Community & News**
+    ### **COMMUNITY & NEWS**
 
     [Blog](/media/blog)
 
