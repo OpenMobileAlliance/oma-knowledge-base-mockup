@@ -14,9 +14,11 @@
                                 class="text-4xl mb-2 text-slate-600 dark:text-golden hover:text-oma-red-500 dark:hover:text-oma-red-500 cursor-pointer" />
                         </div>
                     </div>
+                    <hr class="flex md:hidden border-golden/35 mt-5 mb-2 w-[95%] mx-auto">
+                    <AppBreadcrumbs class="flex md:hidden" />
                 </template>
 
-                <div class="h-full">
+                <div class="h-full overscroll-contain overflow-y-auto max-h-[calc(100vh-8rem)]">
                     <UAccordion :items="menuData.items" multiple>
                         <template #default="{ item, open }">
                             <div>
