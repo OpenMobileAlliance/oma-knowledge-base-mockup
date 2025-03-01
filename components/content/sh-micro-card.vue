@@ -24,7 +24,7 @@
           <div v-if="layout === 'cta'" class="flex justify-start">
             <NuxtLink :to="urlButton" :target="target" class="inline-block">
               <UIcon name="line-md:chevron-right-circle"
-                class="mt-24 mb-4 text-6xl hover:scale-105 duration-300 text-neutral-900 dark:text-golden" />
+                :class="uiLayout.button" />
             </NuxtLink>
           </div>
         </div>
