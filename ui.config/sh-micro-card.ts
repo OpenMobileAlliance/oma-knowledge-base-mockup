@@ -1,3 +1,5 @@
+import { button } from ".";
+
 export default {
   default: {
     wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl pl-4 pr-4 pb-4 pt-4 mx-auto max-w-md w-full h-full justify-items-center text-center hover:shadow-lg hover:scale-105 duration-300 border-2 bg-golden/[0.4] border-golden/[0.6] hover:border-golden dark:bg-neutral-700 dark:border-neutral-600 dark:hover:border-golden",
@@ -82,6 +84,7 @@ export default {
     subtitle: "subtitle text-2xl text-start font-bold dark:saturate-[180%] text-black dark:text-golden mt-1 break-words z-20",
     underline: "underline underline-offset-[1.5rem] decoration-2 dark:decoration-golden/[0.4]",
     text: "text mt-8 font-light text-[1.1rem] text-start text-neutral-800 dark:text-golden break-words z-20",
+    button: "mt-24 mb-4 text-6xl hover:scale-105 duration-300 text-neutral-900 dark:text-golden",
   },
   logo: {
     wrapper: "container overflow-hidden relative group flex flex-col rounded-2xl pl-3 pr-3 mx-auto max-w-md w-full h-full justify-items-center text-center border-2 border-golden/[0.6] hover:border-golden dark:border-neutral-600 dark:hover:border-golden",
