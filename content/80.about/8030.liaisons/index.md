@@ -7,8 +7,13 @@ layout: web
 
 Open Mobile Alliance (OMA) collaborates with **external organizations and standards bodies** to drive interoperability and industry-wide adoption of open standards. Recognizing the value of **partnerships**, Open Mobile Alliance engages with organizations that perform **complementary or related work**, ensuring **broader industry participation** and alignment.  
 
-Liaison agreements with Open Mobile Alliance follow three structured approaches:  
+</br>
 
+::ShAlert
+Liaison agreements with Open Mobile Alliance follow three structured approaches:  
+::
+
+</br>
 
 ::ShMultiColumn
 ---
@@ -17,7 +22,7 @@ cols: 3
 
     :::ShMicroCard
     ---
-    layout: flat
+    layout: 
     icon: mdi:handshake-outline
     urlWrapper: 
     title: |
@@ -31,7 +36,7 @@ cols: 3
 
     :::ShMicroCard
     ---
-    layout: flat
+    layout: 
     icon: mdi:contract-outline
     urlWrapper:
     title: |
@@ -45,7 +50,7 @@ cols: 3
 
     :::ShMicroCard
     ---
-    layout: flat
+    layout: 
     icon: mdi:file-document-edit-outline
     urlWrapper:
     title: |

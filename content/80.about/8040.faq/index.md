@@ -35,7 +35,10 @@ text: |
 
 
 ## LwM2M
-Frequent asked questions about OMA LightweithM2M (LwM2M).
+
+::ShAlert
+Frequent asked questions about **OMA LightweithM2M (LwM2M)**.
+::
 
 ::ShFaq
 ---
@@ -60,7 +63,9 @@ qas:
 
 ## TEST EVENTS
 
-This section aims to provide an overview of what is an OMA Test Events, and what you can expect out of the Event.
+::ShAlert
+This section aims to provide an overview of what is an **OMA Test Events**, and what you can expect out of the Event.
+::
 
 ::ShFaq
 ---
@@ -90,8 +95,10 @@ qas:
 
 ## UTILITIES 
 
-As the **utility sector embraces IoT technologies**, efficient **device management, security, and scalability** are critical for success. The **LightweightM2M (LwM2M) protocol** is designed to address these challenges by providing a **secure, interoperable, and resource-efficient** framework for managing connected devices across diverse networks.  
-    This FAQ section answers key questions about **LwM2M’s role in utility management**, covering **implementation strategies, security measures, scalability advantages, and real-world use cases**. Whether you're looking to **optimize deployment, enhance security, or integrate LwM2M with existing systems**, you'll find **clear, concise insights** to help you make informed decisions. 
+::ShAlert
+**LwM2M for Utilities: Your Questions Answered!**—Explore how the **LightweightM2M (LwM2M) protocol** addresses key challenges in **device management, security, and scalability** for utilities. This FAQ section covers **implementation strategies, security measures, and real-world use cases** to help you make informed decisions.  
+[**Explore FAQs**](/specifications/utilities-faq)
+::
 
 ::ShFaq
 ---
@@ -139,6 +146,12 @@ qas:
 ::
 
 ## uCIFI® DATA MODEL
+
+::ShAlert
+**Your Questions Answered: The uCIFI Meta Model FAQ!**—Get insights into how the **uCIFI Meta Model** enables **data interoperability and seamless integration** for **smart city and utility IoT deployments**. Explore the most frequently asked questions to understand its capabilities and benefits.  
+::
+
+
 ::ShFaq
 ---
 qas: 
