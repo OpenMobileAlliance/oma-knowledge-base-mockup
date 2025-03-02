@@ -13,6 +13,8 @@
         </div>
         <div :class="ui.center">
           <AppMenus :class="ui.menus" />
+          <AppBreadcrumbs :class="ui.breadcrumbs"
+            class="hidden md:flex 2xl:hidden lg:justify-between" />
         </div>
         <div :class="ui.right">
           <!-- <ColorMode :class="ui.colorMode" /> -->
@@ -23,7 +25,7 @@
       </div>
     </div>
     <hr :class="ui.hr" />
-    <AppBreadcrumbs :class="ui.breadcrumbs" />
+    <AppBreadcrumbs :class="ui.breadcrumbs" class="hidden 2xl:flex" />
   </header>
 </template>
 
@@ -32,11 +34,11 @@
 const config = {
   wrapper: "flex flex-col -mb-px sticky top-0 backdrop-blur bg-gradient-to-b from-primary/[0.5] dark:bg-gradient-to-b dark:from-primary/[0.25] z-50",
   container: "flex items-center justify-between gap-3 h-[--header-height]",
-  left: "lg:flex-1 flex items-center gap-1.5",
+  left: "flex items-center gap-1.5",
   logo: "flex-shrink-0 font-bold text-xl text-gray-900 dark:text-white items-center gap-1.5",
-  center: "flex justify-center grow",
+  center: "flex justify-center items-center",
   menus: "hidden 2xl:flex z-50",
-  right: "flex items-center lg:justify-end lg:flex-1 gap-1.5",
+  right: "flex items-center gap-1.5",
   colorMode: "hidden 2xl:flex",
   login: "mr-2 text-base",
   socialLinks: "text-xl hidden 2xl:flex",

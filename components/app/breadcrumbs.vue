@@ -1,43 +1,57 @@
 <template>
-  <header class="-mb-1 w-full text-xs italic flex items-center">
-    <div class="flex mx-auto mt-4">
-      <NuxtLink v-if="route.path !== '/home'" to="/" :class="ui.linkCrumb">
-        <UIcon :name="iconHome" dynamic class="mt-[1px]" />
+  <div :class="ui.wrapper">
+    <div :class="ui.inner">
+      <NuxtLink v-if="route.path !== '/home'" to="/"
+        :class="[ui.linkCrumb, { 'hidden': breadcrumbs.length > 2, 'lg:flex': breadcrumbs.length > 2 }]">
+        <UIcon :name="iconHome" dynamic :class="ui.iconHome" />
         HOME
       </NuxtLink>
-      <span v-for="(crumb, index) in breadcrumbs" :key="index" class="flex text-primary/[0.7] dark:text-primary/[0.8]">
-        <div v-if="route.path !== '/home'">&nbsp; > &nbsp;</div>
+      <span v-for="(crumb, index) in breadcrumbs" :key="index" :class="ui.crumbsWrapper">
+        <div v-if="route.path !== '/home'">
+          <UIcon :name="iconNext" dynamic :class="[ui.iconNext, index === 0
+            ? (breadcrumbs.length > 2 ? 'hidden lg:inline-flex' : 'inline-flex')
+            : 'inline-flex']" />
+        </div>
         <NuxtLink v-if="crumb.to != route.path" :to="crumb.to"
           :class="{ [ui.linkCrumb]: isBreadcrumbActive(crumb, index) }">
-          <UIcon v-if="route.path !== '/home'" :name="iconCrumb" dynamic class="mt-[1px] mr-1 ml-1" />
-          <UIcon v-else :name="iconHome" dynamic class="mt-[1px]" />
+          <UIcon v-if="route.path !== '/home'" :name="iconCrumb" dynamic :class="ui.iconCrumb" />
+          <UIcon v-else :name="iconHome" dynamic :class="ui.iconHome" />
           {{ crumb.label.toUpperCase() }}
         </NuxtLink>
         <span v-else :class="[ui.activeCrumb, { '': isBreadcrumbActive(crumb, index) }]">
-          <UIcon v-if="route.path === '/home'" :name="iconHome" dynamic class="mt-[1px] mr-1 ml-1" />
-          <UIcon v-else :name="iconCrumb" dynamic class="mt-[1px] mr-1 ml-1" />
+          <UIcon v-if="route.path === '/home'" :name="iconHome" dynamic :class="ui.iconHome" />
+          <UIcon v-else :name="iconCrumb" dynamic :class="ui.iconCrumb" />
           {{ crumb.label.toUpperCase() }}
         </span>
       </span>
     </div>
-  </header>
+  </div>
 </template>
 
 <script setup lang="ts">
 
 const config = {
-  linkCrumb: 'text-[15px] text-primary/[0.7] hover:text-black dark:text-primary/[0.8] dark:hover:text-white duration-300 ease-out',
-  activeCrumb: 'text-[15px] text-black dark:text-white',
+  wrapper: 'w-full flex italic 2xl:justify-center items-center',
+  inner: 'flex items-center mr-0 lg:mx-auto mt-1',
+  crumbsWrapper: 'flex items-center text-primary/[0.7] dark:text-primary/[0.8]',
+  iconNext: 'text-3xl flex items-center mt-1',
+  iconHome: 'hidden md:inline-flex items-center mr-1',
+  iconCrumb: 'hidden md:inline-flex items-center mr-1',
+  linkCrumb: 'text-[15px] font-normal text-primary/[0.7] hover:text-black dark:text-primary/[0.8] dark:hover:text-white duration-300 ease-out',
+  activeCrumb: 'text-[15px] font-normal text-black dark:text-white',
 };
+
 
 const props = withDefaults(
   defineProps<{
     ui?: Partial<typeof config>;
+    iconNext?: string;
     iconCrumb?: string;
     iconHome?: string;
   }>(),
   {
     ui: () => ({}),
+    iconNext: 'material-symbols:arrow-right-rounded',
     iconCrumb: 'solar:folder-path-connect-linear',
     iconHome: 'line-md:home-twotone',
   },
