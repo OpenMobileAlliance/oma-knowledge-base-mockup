@@ -20,6 +20,7 @@
       <!-- Tag Section -->
       <div title="Filter cards by tags" :class="ui.tagSection" @click="isOpen = true">
         <div v-if="tags" :class="ui.tags.title">{{ 'Tags' }}
+          <div v-if="selectedTags.length > 0" class="">{{ ': ' +selectedTags.length }}</div>
           <UIcon name="system-uicons:tags" class="ml-3 text-3xl" />
         </div>
         <USlideover v-model="isOpen" :ui="{ overlay: { background: 'dark:bg-golden/[0.2] backdrop-blur-sm' } }">
