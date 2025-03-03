@@ -157,16 +157,16 @@ qas:
 qas: 
   - q: "Are there Synergies between uCIFI® and other standards?" 
     a: |
-        The goal of uCIFI® is to bring solutions to existing market pains, particularly to provide a unified data model to Smart City and Smart Energy applications that require long-range device-to-device communication. To do so, uCIFI® shall not reinvent the wheel but will work hand in hand with other consortia and initiatives including OMA, WISUN, FIWARE, LoRaWAN and TALQ:
+        The goal of uCIFI® is to bring solutions to existing market pains, particularly to provide a unified data model to Smart City and Smart Energy applications that require long-range device-to-device communication. To do so, uCIFI® shall not reinvent the wheel but will work hand in hand with other consortia and initiatives including OMA, Wi-SUN, FIWARE, LoRaWAN, TALQ, Zhaga and D4i:
 
+        - **FIWARE:**: the uCIFI® data model is the equivalent of Fiware device profiles but on constrained networks, while Fiware models are designed to run only on IT servers and based on JSON and NGSI RESTful that can’t be transported on LPWAN low bandwidth networks.
 
-        - **FIWARE:** the uCIFI® data model is the equivalent of Fiware device profiles but on constrained networks, while Fiware models are designed to run only on IT servers and based on JSON and NGSI RESTful that can’t be transported on LPWAN low bandwidth networks.
+        - **LoRaWAN**: uCIFI® shall provide a unified data model for LoRa devices to be interoperable and easy to integrate in central management software.
 
-        - **LoRaWAN:** uCIFI® shall provide a unified data model for LoRa devices to be interoperable and easy to integrate in central management software.
+        - **Wi-SUN**: the Smart City Working Group will specify an application stack on top of Wi-SUN mesh to extend smart city devices interoperability and capabilities to a higher level.
 
-        - **Wi-SUN:** the uCIFI®️ Technical Workgroup will specify an open-source smart city stack on top of Wi-SUN (6LowPan) mesh to extend smart city devices interoperability and capabilities to a higher level.
+        - **TALQ** is a protocol based on HTTP and RESTful interfaces, offering interoperability at central management software layers. uCIFI is designed to complement TALQ: while TALQ offers interoperability at the central software layers, but does not provide interoperability between TALQ gateways, the uCIFI initiative standardizes application layers in the gateways and node, enabling interoperability and avoiding vendor lock-in. uCIFI and TALQ data models can be mapped through dedicated sofware layers, to further simplify integration and end to end interoperability.
 
-        - **TALQ:** the uCIFI® data model is compatible with the TALQ protocol. While TALQ is based on HTTP and RESTful (i.e. only available on internet networks between gateways and central management software), the uCIFI data model is designed to be used on constrained networks such as NB-IoT, LoRaWAN and WISUN networks. A uCIFI®-compatible device can easily be interfaced with a TALQ Central Management Software through a uCIFI-to-TALQ gateway.
   - q: "How does it position vis-à-vis existing wireless technologies?"
     a: |
         Cities and Utilities need a variety of wireless networks to support their needs. LPWAN networks may be fine for battery-based devices, particularly when device-to-device is not needed and data bandwidth is limited to few kilobytes per second. The main issue with such open LPWAN networks is the lack of standardization for data format. Each device supplier uses proprietary data payload that only vendors can decode, which results into cities being dependent from vendor’s proprietary cloud systems to do the data translation. On such LPWAN networks, uCIFI® shall provide a standardized data model/data payload that vendors can use freely to unlock these networks and drastically reduce vendor’s dependence in smart city applications.
@@ -174,11 +174,22 @@ qas:
         When higher bandwidth or device-to-device communication is needed (e.g. dynamic outdoor lighting, demand/response in smart metering), Wi-SUN wireless mesh may be required. The uCIFI® Alliance develops an open source smart city Application Layer on top of mesh networks which are standardized by the Wi-SUN Alliance up to the transport layer.
   - q: "What are the verticals included in the data model?"
     a: |
-        This uCIFI® data model version 1.0 defines agreed and standard attributes for 33 smart city & utility object types including streetlight controllers, electrical cabinet controllers, water & gas meters, water pressure & quality meters, environmental sensors, parking place detectors, traffic counters, city information panels and more. The uCIFI® data model is designed to be extendable with vendor-specific objects and attributes.
+        This uCIFI® data model defines standard attributes for almost 50 smart city & utility object types including streetlight controllers, electrical cabinet controllers, water & gas meters, water pressure & quality meters, environmental sensors, parking place detectors, traffic counters, city information panels and more.  
+        In addition, relevant effort has been recently made to standardize a complete and feature-rich Schedule Framework to allow autonomous device operation, reacting to both time based and sensor based events, supporting various standalone and device-to-device scenario. The uCIFI® data model is designed to be extendable with vendor-specific objects and attributes.
+
   - q: "Does uCIFI data model apply globally?"
     a: |
         The uCIFI® unified data model shall apply to any standardized LPWAN network, regardless of wireless spectrum and technologies.
-              
+        
+  - q: "How can interoperability be assured?"
+    a: |
+        One of the goals of the Smart City Working Group is to create a testing and validation framework that vendors and cities may be able to use to assure adherence to the data model and proper implementation. In addition, vendors may join the numerous Plug Fest events being periodically organized by OMA to let implementors meet and cross validate their products.
+
+  - q: "How long will the data model be supported?"
+    a: |
+        The uCIFI® data model does not have any predetermined time limit.  
+
+        In case of extensions, backward compatibility is always considered as a priority, and LwM2M versioning further helps to ensure that no ambiguity would occur when working with multiple versions of the same object.
 ---
 ::
 
