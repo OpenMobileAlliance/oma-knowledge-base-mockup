@@ -10,6 +10,7 @@ cardID: 105
 tags: 
     - news
     - workshop
+    - blogs
 ---
 
 In the rapidly expanding Internet of Things (IoT) landscape, device management has become a cornerstone for deploying and maintaining robust IoT solutions. With millions of interconnected devices in various industries—from smart homes to critical infrastructure—effective device management ensures seamless operation, scalability, and reliability.
