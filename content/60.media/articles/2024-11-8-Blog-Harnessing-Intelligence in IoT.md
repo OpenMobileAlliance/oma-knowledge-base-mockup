@@ -9,6 +9,7 @@ rightLabel: OMA
 cardID: 115
 tags: 
     - news
+    - blogs
 ---
 
 With the Internet of Things (IoT) driving innovation across the industrial sector, the ability to monitor, analyze, and act on data through dashboard analytics has become essential. Dashboards bring visual reporting, management, insights/analytics, alerting, automation, and other decisions or actions based on real-time and historical data inputs. Data intelligence is also becoming more advanced as machine learning and artificial intelligence (AI) identify patterns, anomalies, trends, and other important triggers to act or perform operational activities.

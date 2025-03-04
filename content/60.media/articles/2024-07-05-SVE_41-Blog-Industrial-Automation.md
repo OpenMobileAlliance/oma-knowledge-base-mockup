@@ -10,6 +10,7 @@ cardID: 90
 tags: 
     - news
     - workshop
+    - blogs
 ---
 
 <h3>Bringing Real-Time to the Masses</h3>
