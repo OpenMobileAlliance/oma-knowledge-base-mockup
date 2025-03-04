@@ -5,6 +5,7 @@ export default defineNuxtConfig({
 
   routeRules: {
     '/media/articles/2024-09-28-release-sve_42': { prerender: true },
+    '/media/articles/2025-02-24-blog-ama-webinar': { prerender: true },
     '/': { redirect: '/home' },
     '/groups/resources': { redirect: '/specifications/resources' },
     '/join/join-newsletter': { redirect: '/about/newsletter' },
