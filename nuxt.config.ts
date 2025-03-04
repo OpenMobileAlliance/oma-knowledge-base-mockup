@@ -67,7 +67,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/news', '/media/articles', '/guidelines', '/groups', '/media', '/oma-events', '/about/faq/', '/oma-events/past-events', '/about/newsletter', '/media/articles/2024-09-28-release-sve_42'],
+      routes: ['/news', '/media/articles', '/guidelines', '/groups', '/media', '/oma-events', '/about/faq/', '/oma-events/past-events', '/about/newsletter'],
       ignore: ['/www.ericsson.com'], 
       failOnError: false,
     },
