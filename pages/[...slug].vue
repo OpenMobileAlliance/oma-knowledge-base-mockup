@@ -61,7 +61,7 @@
             <ContentRenderer v-if="page.body" :value="page" :style="{ fontSize: main.font.size }"
               class="par text-left dark:text-white" />
             <br />
-            <PrevNextPage v-if="route.path !== '/'" />
+            <!-- <PrevNextPage v-if="route.path !== '/'" /> -->
           </div>
         </div>
       </template>

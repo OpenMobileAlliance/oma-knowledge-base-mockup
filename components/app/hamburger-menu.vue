@@ -89,18 +89,18 @@ const { ui } = useUI('menus', toRef(props, 'ui'), config, toRef(props, 'class'),
 
 interface MenuItem {
     label: string
-    path?: string
-    onClick?: () => void
-    children?: MenuItem[] | null
+    path: string
+    children: MenuItem[] | null
+    onClick: () => void
 }
 
-// Transform navigation data, using the "isChild" flag to decide whether to route.
 function transformNavigation(navItems: any[], isChild = false): MenuItem[] {
     const excludedTitles = [
         'Guidelines',
         'Announcement',
         'Contact Us',
         'Frequently Asked Questions',
+        'Index',
         'Open Mobile Alliance',
     ]
     const excludedPaths = [
@@ -112,44 +112,38 @@ function transformNavigation(navItems: any[], isChild = false): MenuItem[] {
     ]
 
     return navItems
-        .filter(item => !excludedPaths.includes(item._path) && !excludedTitles.includes(item.title))
+        .filter(item => {
+            return !excludedPaths.includes(item._path) && !excludedTitles.includes(item.title)
+        })
         .map(item => {
-            const transformedChildren = item.children ? transformNavigation(item.children, true) : null;
-            const indexPath = `${item._path}`;
+            let children = item.children ? transformNavigation(item.children, true) : null
 
-            if (transformedChildren) {
-                // If there are children, do not attach an onClick to the parent.
-                // Instead, insert the parent's index file as the first entry in the children.
-                return {
+            // For each root folder that has children, add an index file at the start of its submenu.
+            if (!isChild && children && children.length > 0) {
+                children.unshift({
                     label: item.title,
-                    path: null,
-                    children: [
-                        {
-                            label: item.title,
-                            path: indexPath,
-                            isStatic: true,
-                            onClick: () => {
-                                router.push(indexPath);
-                                isOpen.value = false;
-                            }
-                        },
-                        ...transformedChildren
-                    ],
-                    onClick: undefined
-                };
-            } else {
-                // If there are no children, clicking the item navigates directly.
-                return {
-                    label: item.title,
-                    path: indexPath,
+                    path: item._path,
                     children: null,
                     onClick: () => {
-                        router.push(indexPath);
-                        isOpen.value = false;
+                        router.push(item._path)
+                        isOpen.value = false
                     }
-                };
+                })
             }
-        });
+
+            return {
+                label: item.title,
+                path: item._path,
+                children,
+                onClick: () => {
+                    // Only perform navigation on child items.
+                    if (isChild) {
+                        router.push(item._path)
+                        isOpen.value = false
+                    }
+                }
+            }
+        })
 }
 
 const menuData = computed(() => ({
