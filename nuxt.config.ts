@@ -67,7 +67,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/guidelines', '/groups', '/media', '/oma-events', '/about/faq/', '/oma-events/past-events', '/about/newsletter', '/media/articles/2025-03-04-Blog-lwm2m-unlocking-smartCity-interop'],
+      routes: ['/guidelines', '/groups', '/media', '/oma-events', '/about/faq/', '/oma-events/past-events', '/about/newsletter'],
       ignore: ['/www.ericsson.com'], 
       failOnError: false,
     },
