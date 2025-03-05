@@ -89,12 +89,11 @@ const { ui } = useUI('menus', toRef(props, 'ui'), config, toRef(props, 'class'),
 
 interface MenuItem {
     label: string
-    path?: string
-    onClick?: () => void
-    children?: MenuItem[] | null
+    path: string
+    children: MenuItem[] | null
+    onClick: () => void
 }
 
-// Transform navigation data, using the "isChild" flag to decide whether to route.
 function transformNavigation(navItems: any[], isChild = false): MenuItem[] {
     const excludedTitles = [
         'Guidelines',
@@ -104,24 +103,47 @@ function transformNavigation(navItems: any[], isChild = false): MenuItem[] {
         'Index',
         'Open Mobile Alliance',
     ]
-    const excludedPaths = ['/media/articles', '/landing-page-floaters', '/landing-page-menu', '/newsletter', '/test-guide']
+    const excludedPaths = [
+        '/media/articles',
+        '/landing-page-floaters',
+        '/landing-page-menu',
+        '/newsletter',
+        '/test-guide'
+    ]
 
     return navItems
-        .filter(
-            item => !excludedPaths.includes(item._path) && !excludedTitles.includes(item.title)
-        )
-        .map(item => ({
-            label: item.title,
-            path: item._path,
-            children: item.children ? transformNavigation(item.children, true) : null,
-            onClick: () => {
-                // Only navigate and close the slideover if this is a child item.
-                if (isChild) {
-                    router.push(item._path)
-                    isOpen.value = false
+        .filter(item => {
+            return !excludedPaths.includes(item._path) && !excludedTitles.includes(item.title)
+        })
+        .map(item => {
+            let children = item.children ? transformNavigation(item.children, true) : null
+
+            // For each root folder that has children, add an index file at the start of its submenu.
+            if (!isChild && children && children.length > 0) {
+                children.unshift({
+                    label: item.title,
+                    path: item._path,
+                    children: null,
+                    onClick: () => {
+                        router.push(item._path)
+                        isOpen.value = false
+                    }
+                })
+            }
+
+            return {
+                label: item.title,
+                path: item._path,
+                children,
+                onClick: () => {
+                    // Only perform navigation on child items.
+                    if (isChild) {
+                        router.push(item._path)
+                        isOpen.value = false
+                    }
                 }
             }
-        }))
+        })
 }
 
 const menuData = computed(() => ({
