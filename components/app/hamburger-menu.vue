@@ -101,27 +101,55 @@ function transformNavigation(navItems: any[], isChild = false): MenuItem[] {
         'Announcement',
         'Contact Us',
         'Frequently Asked Questions',
-        'Index',
         'Open Mobile Alliance',
     ]
-    const excludedPaths = ['/media/articles', '/landing-page-floaters', '/landing-page-menu', '/newsletter', '/test-guide']
+    const excludedPaths = [
+        '/media/articles',
+        '/landing-page-floaters',
+        '/landing-page-menu',
+        '/newsletter',
+        '/test-guide'
+    ]
 
     return navItems
-        .filter(
-            item => !excludedPaths.includes(item._path) && !excludedTitles.includes(item.title)
-        )
-        .map(item => ({
-            label: item.title,
-            path: item._path,
-            children: item.children ? transformNavigation(item.children, true) : null,
-            onClick: () => {
-                // Only navigate and close the slideover if this is a child item.
-                if (isChild) {
-                    router.push(item._path)
-                    isOpen.value = false
-                }
+        .filter(item => !excludedPaths.includes(item._path) && !excludedTitles.includes(item.title))
+        .map(item => {
+            const transformedChildren = item.children ? transformNavigation(item.children, true) : null;
+            const indexPath = `${item._path}`;
+
+            if (transformedChildren) {
+                // If there are children, do not attach an onClick to the parent.
+                // Instead, insert the parent's index file as the first entry in the children.
+                return {
+                    label: item.title,
+                    path: null,
+                    children: [
+                        {
+                            label: item.title,
+                            path: indexPath,
+                            isStatic: true,
+                            onClick: () => {
+                                router.push(indexPath);
+                                isOpen.value = false;
+                            }
+                        },
+                        ...transformedChildren
+                    ],
+                    onClick: undefined
+                };
+            } else {
+                // If there are no children, clicking the item navigates directly.
+                return {
+                    label: item.title,
+                    path: indexPath,
+                    children: null,
+                    onClick: () => {
+                        router.push(indexPath);
+                        isOpen.value = false;
+                    }
+                };
             }
-        }))
+        });
 }
 
 const menuData = computed(() => ({
