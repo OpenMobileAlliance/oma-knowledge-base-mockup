@@ -4,7 +4,7 @@ export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts", "nuxt-testimonial", '@nuxtjs/color-mode', '@zadigetvoltaire/nuxt-gtm', "@nuxtjs/sitemap"],
 
   routeRules: {
-    "/media/articles/**": { prerender: true },
+    "/media/**": { prerender: true },
     '/': { redirect: '/home' },
     '/groups/resources': { redirect: '/specifications/resources' },
     '/join/join-newsletter': { redirect: '/about/newsletter' },
