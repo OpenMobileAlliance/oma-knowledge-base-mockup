@@ -4,7 +4,6 @@ export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts", "nuxt-testimonial", '@nuxtjs/color-mode', '@zadigetvoltaire/nuxt-gtm', "@nuxtjs/sitemap"],
 
   routeRules: {
-    "/media/articles/2025-03-04-Blog-lwm2m-unlocking-smartCity-interop": { prerender: true },
     '/': { redirect: '/home' },
     '/groups/resources': { redirect: '/specifications/resources' },
     '/join/join-newsletter': { redirect: '/about/newsletter' },
@@ -68,7 +67,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/guidelines', '/groups', '/media', '/oma-events', '/about/faq/', '/oma-events/past-events', '/about/newsletter'],
+      routes: ['/guidelines', '/groups', '/media', '/oma-events', '/about/faq/', '/oma-events/past-events', '/about/newsletter', '/media/articles/2025-03-04-Blog-lwm2m-unlocking-smartCity-interop'],
       ignore: ['/www.ericsson.com'], 
       failOnError: false,
     },
