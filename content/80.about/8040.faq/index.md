@@ -148,7 +148,7 @@ qas:
 ## uCIFI® DATA MODEL
 
 ::ShAlert
-**Your Questions Answered: The uCIFI Meta Model FAQ!**—Get insights into how the **uCIFI Meta Model** enables **data interoperability and seamless integration** for **smart city and utility IoT deployments**. Explore the most frequently asked questions to understand its capabilities and benefits.  
+**Your Questions Answered: The uCIFI Data Model FAQ!**—Get insights into how the **uCIFI Data Model** enables **data interoperability and seamless integration** for **smart city and utility IoT deployments**. Explore the most frequently asked questions to understand its capabilities and benefits.  
 ::
 
 
