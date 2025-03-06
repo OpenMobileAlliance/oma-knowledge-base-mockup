@@ -1,7 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { getArticleRoutes } from './utils/getArticleRoutes';
 const articleRoutes = await getArticleRoutes();
-console.log('Article Routes:', articleRoutes);
+//console.log('Article Routes:', articleRoutes);
 
 export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts", "nuxt-testimonial", '@nuxtjs/color-mode', '@zadigetvoltaire/nuxt-gtm', "@nuxtjs/sitemap"],
