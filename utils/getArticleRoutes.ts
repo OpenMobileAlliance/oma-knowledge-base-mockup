@@ -22,5 +22,5 @@ export async function getArticleRoutes() {
         });
 }
 
-// const articleRoutes = await getArticleRoutes();
-// console.log('Article Routes:', ...articleRoutes.map(route => `'${route}'`));
+const articleRoutes = await getArticleRoutes();
+//console.log('Article Routes:', ...articleRoutes.map(route => `'${route}'${','}`));
