@@ -11,7 +11,7 @@ export async function getArticleRoutes() {
     }
 
     const files = fs.readdirSync(articlesDir);
-    console.log('Files found:', files);
+    //console.log('Files found:', files);
 
     return files
         .filter(file => file.endsWith('.md'))
@@ -21,3 +21,6 @@ export async function getArticleRoutes() {
             return `media/articles/${name}`;
         });
 }
+
+// const articleRoutes = await getArticleRoutes();
+// console.log('Article Routes:', ...articleRoutes.map(route => `'${route}'`));
