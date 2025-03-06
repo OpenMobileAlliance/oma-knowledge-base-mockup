@@ -5,7 +5,7 @@ export default defineNuxtConfig({
 
   routeRules: {
     '/media/articles/2024-09-28-release-sve_42': { prerender: true },
-    '/media/articles/**': { prerender: true },
+    '/media/articles/2025-03-04-blog-lwm2m-unlocking-smartcity-interop': { prerender: true },
     '/': { redirect: '/home' },
     '/groups/resources': { redirect: '/specifications/resources' },
     '/join/join-newsletter': { redirect: '/about/newsletter' },
