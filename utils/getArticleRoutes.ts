@@ -8,5 +8,5 @@ export async function getArticleRoutes() {
     return fs
         .readdirSync(articlesDir)
         .filter(file => file.endsWith('.md'))
-        .map(file => `/media/articles/${file.replace('.md', '')}`);
+        .map(file => `/media/articles/${file}`);
 }
