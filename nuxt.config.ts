@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { getArticleRoutes } from './utils/getArticleRoutes';
+const articleRoutes = await getArticleRoutes();
 
 export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts", "nuxt-testimonial", '@nuxtjs/color-mode', '@zadigetvoltaire/nuxt-gtm', "@nuxtjs/sitemap"],
@@ -67,7 +69,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/guidelines', '/groups', '/media', '/oma-events', '/about/faq/', '/oma-events/past-events', '/about/newsletter'],
+      routes: ['/guidelines', '/groups', '/media', '/oma-events', '/about/faq/', '/oma-events/past-events', '/about/newsletter', ...articleRoutes],
       ignore: ['/www.ericsson.com'], 
       failOnError: false,
     },
