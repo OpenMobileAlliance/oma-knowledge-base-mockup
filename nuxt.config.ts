@@ -1,10 +1,12 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { getArticleRoutes } from './utils/getArticleRoutes';
+const articleRoutes = await getArticleRoutes();
+//console.log('Article Routes:', articleRoutes);
 
 export default defineNuxtConfig({
   modules: ["@nuxt/content", "@nuxt/ui", "@nuxtjs/google-fonts", "nuxt-testimonial", '@nuxtjs/color-mode', '@zadigetvoltaire/nuxt-gtm', "@nuxtjs/sitemap"],
 
   routeRules: {
-    '/media/articles/2024-09-28-release-sve_42': { prerender: true },
     '/': { redirect: '/home' },
     '/groups/resources': { redirect: '/specifications/resources' },
     '/join/join-newsletter': { redirect: '/about/newsletter' },
@@ -68,7 +70,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/guidelines', '/groups', '/media', '/oma-events', '/about/faq/', '/oma-events/past-events', '/about/newsletter'],
+      routes: ['/guidelines', '/groups', '/media', '/oma-events', '/about/faq/', '/oma-events/past-events', '/about/newsletter', ...articleRoutes.map(route => `'${route}'${','}`)],
       ignore: ['/www.ericsson.com'], 
       failOnError: false,
     },
