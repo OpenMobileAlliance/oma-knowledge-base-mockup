@@ -2,11 +2,12 @@
   <component :is="layout === 'cta' ? 'div' : NuxtLinkComponent"
     v-bind="layout === 'cta' ? {} : { to: props.urlWrapper, target: props.target }"
     :class="['not-prose', uiLayout.wrapper]" :target="layout === 'cta' ? undefined : props.target">
-    <img v-if="props.coverImage && !coverText && !coverIcon" :class="[uiLayout.coverImage]" :src="props.coverImage" />
-    <div v-if="props.coverIcon && !coverText && !coverImage" :class="[uiLayout.coverIconWrapper]">
+    <img v-if="!coverText && !coverIcon && layout!=='flat'" :class="[uiLayout.coverImage]"
+      :src="props.coverImage || (layout === 'teaser' || 'default' ? '/images/landing-hero/lh-2.jpeg' : '')" />
+    <div v-if="props.coverIcon && !coverText && !coverImage && layout !== 'flat'" :class="[uiLayout.coverIconWrapper]">
       <UIcon :name="props.coverIcon" :class="uiLayout.coverIcon" dynamic />
     </div>
-    <div v-if="props.coverText && !coverImage && !coverIcon" :class="[uiLayout.coverText]">
+    <div v-if="props.coverText && !coverImage && !coverIcon && layout !== 'flat'" :class="[uiLayout.coverText]">
       <MDC :value="coverText" class="px-4" />
     </div>
     <div>
@@ -23,8 +24,7 @@
           <MDC v-if="text" :class="[uiLayout.text, 'transition-opacity duration-300']" :value="text" />
           <div v-if="layout === 'cta'" class="flex justify-start">
             <NuxtLink :to="urlButton" :target="target" class="inline-block">
-              <UIcon name="line-md:chevron-right-circle"
-                :class="uiLayout.button" />
+              <UIcon name="line-md:chevron-right-circle" :class="uiLayout.button" />
             </NuxtLink>
           </div>
         </div>
