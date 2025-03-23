@@ -61,7 +61,7 @@ gap: md:gap-32
 
     [Media](/media)
 
-    [Newsletter Signup](/about/newsletter)
+    [OMA News Signup](/about/subscription)
 
     [Events](/oma-events)
 
