@@ -1,5 +1,5 @@
 ---
-title: Newsletters
+title: OMA NEWS
 description:
 layout: web
 ---
@@ -9,7 +9,7 @@ ui:
     gap: gap-6
 description: This constructor is standalone
 title: |
-    Open Mobile Alliance Newsletters
+    Open Mobile Alliance OMA NEWS
 subtitle: |
     Use the tags to filter the news
 text: |

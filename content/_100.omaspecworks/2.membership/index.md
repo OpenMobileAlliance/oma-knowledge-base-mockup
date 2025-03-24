@@ -147,5 +147,5 @@ OMA SpecWorks offers several levels of membership to meet the needs of every org
 
 **Join OMA SpecWorks today and be part of the future of wireless communication**. 
 - Visit [Join OMA](/omaspecworks/membership/join) to learn more and start your membership journey.
-- To Get the latest updates Subscribe for Our [Newsletters](/newsletter)!
+- To Get the latest updates Subscribe for Our [News](/subscription)!
 

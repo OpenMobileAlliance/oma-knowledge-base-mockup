@@ -10,6 +10,9 @@ export default defineNuxtConfig({
     '/': { redirect: '/home' },
     '/groups/resources': { redirect: '/specifications/resources' },
     '/join/join-newsletter': { redirect: '/about/newsletter' },
+    '/join/subscribe-news' : { redirect: '/about/subscription' },
+    '/media/subscription' : { redirect: '/about/subscription' },
+    '/about/join-news' : { redirect: '/about/subscription' },
   },
 
   site: {
@@ -70,7 +73,7 @@ export default defineNuxtConfig({
   nitro: {
     prerender: {
       crawlLinks: true,
-      routes: ['/guidelines', '/groups', '/media', '/oma-events', '/about/faq/', '/oma-events/past-events', '/about/newsletter', ...articleRoutes.map(route => `'${route}'${','}`)],
+      routes: ['/guidelines', '/groups', '/media', '/oma-events', '/about/faq/', '/oma-events/past-events', '/about/subscription', ...articleRoutes.map(route => `'${route}'${','}`)],
       ignore: ['/www.ericsson.com'], 
       failOnError: false,
     },
