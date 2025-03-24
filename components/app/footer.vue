@@ -4,10 +4,9 @@
     <div :class="ui.contentContainer">
       <div :class="ui.upperContainer">
         <div :class="ui.contentAboveHr">
-          <img src="/logo.png" alt="logo" title="Official OMA logo"
-            :class="ui.logo" />
+          <img src="/logo.png" alt="logo" title="Official OMA logo" :class="ui.logo" />
           <div id="slogan" title="Our Slogan" :class="ui.slogan">
-            For a Connected World
+            <b>For a Connected World</b>
           </div>
           <AppSocialLinks :class="ui.socialLinks" />
         </div>
@@ -45,7 +44,7 @@ const config = {
   contentAboveHr: "flex justify-between items-center",
   backgroundImg: "absolute bottom-0 left-0 w-full opacity-20 object-cover h-full xl:h-auto xl:object-fill object-center z-20",
   logo: "size-[15%] md:size-[10%] lg:size-[7%] pr-3",
-  slogan: "text-3xl sm:text-3xl md:text-3xl lg:text-5xl font-thin text-[#DE8800] text-center font-expressa",
+  slogan: "text-3xl sm:text-3xl md:text-3xl lg:text-5xl font-thin text-golden text-center font-expressa",
   socialLinks: "text-xl sm:text-2xl md:text-3xl space-x-2 pl-3",
   hr: "mx-auto mb-10 mt-10 dark:border-neutral-600",
   megaFooterContent: "text-left z-40",
