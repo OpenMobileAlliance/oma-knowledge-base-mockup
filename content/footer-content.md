@@ -10,7 +10,7 @@ cols: 4
 gap: md:gap-32
 ---
     :::ShColumn
-    ### **LEGAL & COMPLIANCE**
+    ### LEGAL & COMPLIANCE
 
     [Privacy Policy](/about/legal#privacy-policy)
 
@@ -25,7 +25,7 @@ gap: md:gap-32
     :::
 
     :::ShColumn
-    ### **MEMBERSHIP & PARTICIPATION**
+    ### MEMBERSHIP & PARTICIPATION
 
     <a href="https://www.openmobilealliance.org/documents/Website/Membership/OMA-Reference-2024-0001-General_Application.pdf" target="_blank">Membership Agreement</a>
 
@@ -41,7 +41,7 @@ gap: md:gap-32
     :::
 
     :::ShColumn
-    ### **HELP & SUPPORT**
+    ### HELP & SUPPORT
 
     [Contact Us](/about/contact)
 
@@ -55,7 +55,7 @@ gap: md:gap-32
     :::
 
     :::ShColumn
-    ### **COMMUNITY & NEWS**
+    ### COMMUNITY & NEWS
 
     [Blog](/media/blog)
 
