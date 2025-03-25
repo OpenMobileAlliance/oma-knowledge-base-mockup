@@ -18,9 +18,9 @@ export async function getArticleRoutes() {
         .map(file => {
             let name = file.toLowerCase().replace('.md', ''); // Convert to lowercase and remove .md
             name = name.replace(/^60\./, '').replace(/^6001\./, ''); // Remove the number prefixes
-            return `media/articles/${name}`;
+            return `/media/articles/${name}`;
         });
 }
 
 const articleRoutes = await getArticleRoutes();
-//console.log('Article Routes:', ...articleRoutes.map(route => `'${route}'${','}`));
+console.log('Article Routes:', ...articleRoutes.map(route => `'${route}'${','}`));
