@@ -33,8 +33,6 @@ gap: md:gap-32
 
     [Liaisons & Partnerships](/about/liaisons)
 
-    Code of Conduct
-
     [Working Groups](/groups/wg)
 
     <a href="https://www.openmobilealliance.org/documents/Website/Membership/OMA-Reference-2024-0002-Bylaws.pdf" target="_blank">OMA Bylaws</a>
