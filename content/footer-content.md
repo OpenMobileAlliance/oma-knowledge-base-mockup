@@ -37,7 +37,7 @@ gap: md:gap-32
 
     [Working Groups](/groups/wg)
 
-    <a href="https://www.openmobilealliance.org/documents/Website/Membership/OMA-Reference-2020-0001-Bylaws.pdf" target="_blank">OMA Bylaws</a>
+    <a href="https://www.openmobilealliance.org/documents/Website/Membership/OMA-Reference-2024-0002-Bylaws.pdf" target="_blank">OMA Bylaws</a>
     :::
 
     :::ShColumn
@@ -64,7 +64,5 @@ gap: md:gap-32
     [OMA News Signup](/about/subscription)
 
     [Events](/oma-events)
-
-    [Working Groups](/groups/wg)
     :::
 ::
