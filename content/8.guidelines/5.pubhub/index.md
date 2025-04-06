@@ -39,6 +39,39 @@ Click the 👍 icon on the ones you’re most excited about — and help us deci
  🛠️ This page is dedicated to **future features**. Your input directly influences our roadmap.
 ::
 
+### 📌 Features Under Development
+
+Click on a feature title to jump directly to its section:
+
+### 📌 Features Under Development
+
+Click on a feature title to jump directly to its section:
+
+<table>
+  <tr>
+    <td>
+
+- [Comments Editor](#comments-editor)  
+- [Open Document Format (ODF) Export](#open-document-format-odf-export)  
+- [Control Index Content (ToC, ToF, ToT)](#control-index-content-toc-tof-tot)  
+- [Local Run (Docker Support)](#local-run-docker-support)  
+- [Visual Commit Comparison](#visual-commit-comparison)  
+- [Definitions & Abbreviations](#definitions--abbreviations)  
+
+</td>
+    <td>
+
+- [Document Templates](#document-templates)  
+- [Free PubHub (Open Tier)](#free-pubhub-open-tier)  
+- [Visual Markdown Editor](#visual-markdown-editor)  
+- [GitViewer App](#gitviewer-app)  
+- [Direct Website Publishing](#direct-website-publishing)  
+
+</td>
+  </tr>
+</table>
+
+
 Ready to explore? Let’s build the future of spec publishing together.
 
 
