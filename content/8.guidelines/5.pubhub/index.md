@@ -16,11 +16,11 @@ We’re actively developing new features that make publishing structured documen
 
 ### 🌟 Why **PubHub**?
 
-✅ Publish to PDF, HTML, and ODF — straight from Markdown  
-✅ Built for editors and contributors — not just developers  
-✅ Automatically builds from every commit  
-✅ Designed for standardization workflows and spec governance  
-✅ No more copy/paste formatting or external publishing delays  
+🧰  Publish to PDF, HTML, and ODF — straight from Markdown  
+🧰  Built for editors and contributors — not just developers  
+🧰  Automatically builds from every commit  
+🧰  Designed for standardization workflows and spec governance  
+🧰  No more copy/paste formatting or external publishing delays  
 
 ---
 
@@ -51,21 +51,21 @@ Click on a feature title to jump directly to its section:
   <tr>
     <td>
 
-- [Comments Editor](#comments-editor)  
-- [Open Document Format (ODF) Export](#open-document-format-odf-export)  
-- [Control Index Content (ToC, ToF, ToT)](#control-index-content-toc-tof-tot)  
-- [Local Run (Docker Support)](#local-run-docker-support)  
-- [Visual Commit Comparison](#visual-commit-comparison)  
-- [Definitions & Abbreviations](#definitions--abbreviations)  
+📌 [Comments Editor](#comments-editor)  
+📌 [Open Document Format (ODF) Export](#open-document-format-odf-export)  
+📌 [Control Index Content (ToC, ToF, ToT)](#control-index-content-toc-tof-tot)  
+📌 [Local Run (Docker Support)](#local-run-docker-support)  
+📌 [Visual Commit Comparison](#visual-commit-comparison)  
+📌 [Definitions & Abbreviations](#definitions--abbreviations)  
 
 </td>
     <td>
 
-- [Document Templates](#document-templates)  
-- [Free PubHub (Open Tier)](#free-pubhub-open-tier)  
-- [Visual Markdown Editor](#visual-markdown-editor)  
-- [GitViewer App](#gitviewer-app)  
-- [Direct Website Publishing](#direct-website-publishing)  
+📌 [Document Templates](#document-templates)  
+📌 [Free PubHub (Open Tier)](#free-pubhub-open-tier)  
+📌 [Visual Markdown Editor](#visual-markdown-editor)  
+📌 [GitViewer App](#gitviewer-app)  
+📌 [Direct Website Publishing](#direct-website-publishing)  
 
 </td>
   </tr>
